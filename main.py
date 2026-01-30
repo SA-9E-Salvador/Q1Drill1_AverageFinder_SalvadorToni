@@ -7,11 +7,12 @@ def compute_average(event):
     average = (score1 + score2) / 2
 
     if average >= 95:
-        result = "Outstanding!"
+        result = "With flying colors!"
     elif average >= 75:
-        result = "Passed"
+        result = "Yep"
     else:
-        result = "Failed :("
+        result = "Sadly no :("
 
     document.getElementById("average").innerText = round(average, 2)
     document.getElementById("result").innerText = result
+
